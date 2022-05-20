@@ -13,6 +13,8 @@
   background: var(--current-color-mode-background);
 
   .home {
+    height: 100vh;
+
     .home-info {
       padding: 10vw 4vw 0 4vw;
       color: var(--home-text-color);
@@ -76,15 +78,12 @@
     }
   }
 
-  .portfolio {
+  .project {
     padding: 4vw 4vw 0 4vw;
     
-    // .title {
-    //   color: var(--about-title-color);
-    //   font-size: 1.5em;
-    //   padding: 1.5em 0 .5em 0;
-    // }
-
+    .project-block {
+      
+    }
   }
 
   .contact {
