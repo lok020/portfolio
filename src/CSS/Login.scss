@@ -1,0 +1,30 @@
+:root {
+  --background: red;
+  --color: lightgray;
+}
+
+.login {
+  height: 100vh;
+  background: var(--background);
+
+  .login-box {
+    width: 70vw;
+    height: 50vh;
+    padding: 3em;
+    background: red;
+    filter: drop-shadow(0 0 0.75rem crimson);
+    border-radius: 30px; 
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .color-theme {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+}

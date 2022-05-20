@@ -1,0 +1,86 @@
+:root{
+  // dark mode color progression
+  // color from dark to light
+  --dark-mode-1:                      #FFFAEA;
+  --dark-mode-2:                      #86857E;
+  --dark-mode-3:                      #ADABA4;
+  --dark-mode-background:             #000814;
+
+  // light mode color progression
+  // color from light to dark
+  --light-mode-1:                     #ADABA4;
+  --light-mode-2:                     #86857E;
+  --light-mode-3:                     #FFFAEA;
+  --light-mode-background:            white;
+
+  --github-color:                     #c9510c;
+  --linkedin-color:                   #0072B1;
+  --whatsapp-color:                   #128c7e;
+  --email-color:                      #f4c20d;
+
+  // main control for color theme
+  // default color mode in dark mode
+  --current-color-mode-1:             var(--dark-mode-1);
+  --current-color-mode-2:             var(--dark-mode-2);
+  --current-color-mode-3:             var(--dark-mode-3);
+  --current-color-mode-background:    var(--dark-mode-background);
+
+  // scrollbar color control
+  --scrollbar-thumb-color:            var(--current-color-mode-1);
+  --scrollbar-hover-color:            var(--current-color-mode-2);
+  --scrollbar-track-color:            var(--current-color-mode-3);
+
+  // header
+  --header-background:                  transparent;
+  --header-tab-default-color:         var(--current-color-mode-2);
+  --header-tab-hover:                 var(--current-color-mode-1);
+  --header-tab-selected:              var(--current-color-mode-1);
+
+  // app body background
+  --body-background:                  var(--current-color-mode-background);
+
+  // home
+  --home-text-color:                  var(--current-color-mode-1);
+  --home-paragraph-color:             var(--current-color-mode-2);
+
+  // about
+  --about-title-color:                var(--current-color-mode-1);
+  --about-content-title-color:        var(--current-color-mode-2);
+  --about-content-info-color:         var(--current-color-mode-3);
+
+  // contact
+  --contact-title-color:              var(--current-color-mode-1);
+  --contact-content-title-color:      var(--current-color-mode-2);
+  --contact-content-info-color:       var(--current-color-mode-3);
+
+  --border-radius:                    25px;
+}
+
+
+
+
+::-webkit-scrollbar { width: .4em; height: .4em; }
+::-webkit-scrollbar-track { background: var(--scrollbar-track-color); }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb-color); }
+::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-hover-color); }
+@supports (scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color)) {
+  * {
+    scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
+    scrollbar-width: thin;
+  }
+}
+
+.portfolio {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  font-family: system-ui;
+  //background: #000814;
+}
+
+.center-text-in-div {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}

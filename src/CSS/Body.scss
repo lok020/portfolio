@@ -1,0 +1,175 @@
+.body::-webkit-scrollbar {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  display: none;
+}
+
+.body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  height: 100vh;
+  background: var(--body-background);
+
+  .home {
+    .home-info {
+      padding: 10vw 4vw 0 4vw;
+      color: var(--home-text-color);
+
+      .title {
+        font-size: 3.5em;
+      }
+
+      .sub-title {
+        font-size: 1.75em;
+        margin-top: -1vw;
+      }
+
+      .paragraph {
+        font-size: 1.25em;
+        white-space: pre-wrap;
+        color: var(--home-paragraph-color)
+      }
+    }
+
+    .home-portrait {
+      padding: 5vw 25px 25px 25px;
+
+      .portrait{
+        width: 100%;
+        border-radius: var(--border-radius);
+      }
+    }
+  }
+
+  .about {
+    padding: 4vw 4vw 0 4vw;
+    
+    .title {
+      color: var(--about-title-color);
+      font-size: 1.5em;
+      padding: 1.5em 0 .5em 0;
+    }
+
+    .info {
+      padding: 5px 0;
+      
+      #title {
+        color: var(--about-content-title-color);
+      }
+
+      #info {
+        color: var(--about-content-info-color);
+      }
+
+      #sub-info {
+        color: var(--about-content-info-color);
+      }
+    }
+  }
+
+  .portfolio {
+    padding: 4vw 4vw 0 4vw;
+    
+    // .title {
+    //   color: var(--about-title-color);
+    //   font-size: 1.5em;
+    //   padding: 1.5em 0 .5em 0;
+    // }
+
+  }
+
+  .contact {
+    padding: 4vw 4vw 0 4vw;
+    
+    .title {
+      color: var(--contact-title-color);
+      font-size: 1.5em;
+      padding: 1.5em 0 .5em 0;
+    }
+
+    .map {
+      padding-bottom: 30px;
+
+      iframe{
+        border-radius: var(--border-radius);
+      }
+    }
+
+    .info {
+      padding: 8vh 0 0 0;
+      display: flex;
+
+      .content-block {
+        width: 100%;
+        height: 10em;
+        margin: 10px;
+        text-align: center;
+        border-radius: var(--border-radius);
+
+        .image {
+          margin-top: -55px;
+
+          .fa {
+            padding: 20px;
+            font-size: 4em;
+            width: 100%;
+          }
+          
+        }
+
+        .content {
+          //text-decoration: none;
+
+          .message {
+            font-size: 1.5em;
+          }
+
+          .button {
+            padding: 5px;
+
+            .button-message {
+              font-size: 1.25em;
+              background: white;
+              color: black;
+              border: none;
+            }
+          }
+        }
+      }
+
+      .github {
+        background: var(--github-color);
+        color: white;
+      }
+
+      .linkedin {
+        background: var(--linkedin-color);
+        color: white;
+      }
+
+      .whatsapp {
+        background: var(--whatsapp-color);
+        color: white;
+      }
+
+      .email {
+        background: var(--email-color);
+        color: white;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      .info {
+        display: grid;
+
+        .content-block {
+          margin: 0 0 50px 0;
+        }
+      }
+    }
+    
+  }
+
+}
