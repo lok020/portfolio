@@ -10,7 +10,7 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   height: 100vh;
-  background: var(--body-background);
+  background: var(--current-color-mode-background);
 
   .home {
     .home-info {
@@ -18,7 +18,7 @@
       color: var(--home-text-color);
 
       .title {
-        font-size: 3.5em;
+        font-size: 3em;
       }
 
       .sub-title {
@@ -27,6 +27,7 @@
       }
 
       .paragraph {
+        padding: 30px 0 0 0;
         font-size: 1.25em;
         white-space: pre-wrap;
         color: var(--home-paragraph-color)
@@ -44,7 +45,7 @@
   }
 
   .about {
-    padding: 4vw 4vw 0 4vw;
+    padding: 4vw;
     
     .title {
       color: var(--about-title-color);
@@ -66,6 +67,12 @@
       #sub-info {
         color: var(--about-content-info-color);
       }
+    }
+
+    .information-area {
+      // border: 1px solid var(--current-color-mode-2);
+      // border-radius: var(--border-radius);
+      // padding: var(--about-information-padding);
     }
   }
 
@@ -91,6 +98,7 @@
 
     .map {
       padding-bottom: 30px;
+      overflow: hidden;
 
       iframe{
         border-radius: var(--border-radius);

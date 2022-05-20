@@ -4,14 +4,16 @@
   --dark-mode-1:                      #FFFAEA;
   --dark-mode-2:                      #86857E;
   --dark-mode-3:                      #ADABA4;
-  --dark-mode-background:             #000814;
+  --dark-mode-background:             #19202B;
+  --dark-mode-glow:                   #FFFFFF;
 
   // light mode color progression
   // color from light to dark
   --light-mode-1:                     #ADABA4;
   --light-mode-2:                     #86857E;
   --light-mode-3:                     #FFFAEA;
-  --light-mode-background:            white;
+  --light-mode-background:            #FFFFFF;
+  --light-mode-glow:                  #000000;
 
   --github-color:                     #c9510c;
   --linkedin-color:                   #0072B1;
@@ -24,6 +26,7 @@
   --current-color-mode-2:             var(--dark-mode-2);
   --current-color-mode-3:             var(--dark-mode-3);
   --current-color-mode-background:    var(--dark-mode-background);
+  --current-color-mode-glow:          var(--dark-mode-glow);
 
   // scrollbar color control
   --scrollbar-thumb-color:            var(--current-color-mode-1);
@@ -35,9 +38,7 @@
   --header-tab-default-color:         var(--current-color-mode-2);
   --header-tab-hover:                 var(--current-color-mode-1);
   --header-tab-selected:              var(--current-color-mode-1);
-
-  // app body background
-  --body-background:                  var(--current-color-mode-background);
+  --header-tab-glow:                  var(--current-color-mode-glow);
 
   // home
   --home-text-color:                  var(--current-color-mode-1);
@@ -47,12 +48,14 @@
   --about-title-color:                var(--current-color-mode-1);
   --about-content-title-color:        var(--current-color-mode-2);
   --about-content-info-color:         var(--current-color-mode-3);
+  --about-information-padding:        1vw;
 
   // contact
   --contact-title-color:              var(--current-color-mode-1);
   --contact-content-title-color:      var(--current-color-mode-2);
   --contact-content-info-color:       var(--current-color-mode-3);
 
+  // general
   --border-radius:                    25px;
 }
 

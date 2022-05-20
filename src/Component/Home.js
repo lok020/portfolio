@@ -12,7 +12,7 @@ class Home extends Component {
         <Row>
           <Col xs="12" lg="8" className={"home-info"}>
             <div className={"title"}>{"Wai Lok Cheng"}</div>
-            <div className={"sub-title"}>{"UI/UX Developer"}</div>
+            <div className={"sub-title"}>{"Front-end Developer"}</div>
             <div className={"paragraph"}>
               {"Born and raised in Hong Kong.\n"}
               {"Graduated from Washington State University, USA - Bachelor of Science in Computer Science.\n"}

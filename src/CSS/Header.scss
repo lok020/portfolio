@@ -10,7 +10,7 @@
     height: inherit;
     width: inherit;
     //filter: invert(1);
-    mix-blend-mode: difference;
+    //mix-blend-mode: difference;
 
     .header-logo {
     }
@@ -49,11 +49,11 @@
 
       @keyframes glow {
         from {
-          text-shadow: 0 0 2px var(--dark-mode-background), 0 0 5px var(--dark-mode-background), 0 0 7px var(--header-tab-selected), 0 0 10px var(--header-tab-selected), 0 0 12px var(--header-tab-selected), 0 0 15px var(--header-tab-selected), 0 0 22px var(--header-tab-selected);
+          text-shadow: 0 0 2px var(--dark-mode-background), 0 0 5px var(--dark-mode-background), 0 0 7px var(--header-tab-glow), 0 0 10px var(--header-tab-glow), 0 0 12px var(--header-tab-glow), 0 0 15px var(--header-tab-glow), 0 0 22px var(--header-tab-glow);
         }
         
         to {
-          text-shadow: 0 0 5px var(--dark-mode-background), 0 0 7px var(--header-tab-selected), 0 0 10px var(--header-tab-selected), 0 0 12px;
+          text-shadow: 0 0 5px var(--dark-mode-background), 0 0 7px var(--header-tab-glow), 0 0 10px var(--header-tab-glow), 0 0 12px;
         }
       }
       
