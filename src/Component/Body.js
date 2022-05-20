@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Home from './Home';
 import About from './About';
+import Project from './Project';
 import Contact from './Contact';
 
 // CSS & SCSS
@@ -30,6 +31,8 @@ class Body extends Component {
       display.push(<Home key={"home"}/>);
     else if (current_page === "about")
       display.push(<About key={"about"}/>);
+    else if (current_page === "project")
+      display.push(<Project key={"project"}/>);
     else if (current_page === "contact")
       display.push(<Contact key={"contact"}/>);
 

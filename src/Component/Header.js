@@ -6,7 +6,7 @@ import { Row, Col } from 'react-bootstrap';
 import '../CSS/Header.scss';
 
 class Header extends Component {
-  header_selection_list = [ "home", "about", "portfolio", "contact" ];
+  header_selection_list = [ "home", "about", "project", "contact" ];
   //timeloop = null;
 
   constructor(props) {
