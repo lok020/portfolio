@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9bfab9e0.css",
-    "main.js": "/portfolio/static/js/main.93d80532.js",
+    "main.css": "/portfolio/static/css/main.67847188.css",
+    "main.js": "/portfolio/static/js/main.3fcfeec0.js",
     "static/media/wai_lok.png": "/portfolio/static/media/wai_lok.101f879027be4cea1732.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/portfolio/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/portfolio/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/portfolio/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/portfolio/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/portfolio/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/project_1.png": "/portfolio/static/media/project_1.2b3a3fc11eaffef63318.png",
     "index.html": "/portfolio/index.html",
-    "main.9bfab9e0.css.map": "/portfolio/static/css/main.9bfab9e0.css.map",
-    "main.93d80532.js.map": "/portfolio/static/js/main.93d80532.js.map"
+    "main.67847188.css.map": "/portfolio/static/css/main.67847188.css.map",
+    "main.3fcfeec0.js.map": "/portfolio/static/js/main.3fcfeec0.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bfab9e0.css",
-    "static/js/main.93d80532.js"
+    "static/css/main.67847188.css",
+    "static/js/main.3fcfeec0.js"
   ]
 }
