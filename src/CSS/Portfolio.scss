@@ -4,6 +4,8 @@
   --dark-mode-1:                      #FFFAEA;
   --dark-mode-2:                      #86857E;
   --dark-mode-3:                      #ADABA4;
+  --dark-mode-4:                      #565552;
+  --dark-mode-5:                      #333331;
   --dark-mode-background:             #19202B;
   --dark-mode-glow:                   #FFFFFF;
 
@@ -25,6 +27,8 @@
   --current-color-mode-1:             var(--dark-mode-1);
   --current-color-mode-2:             var(--dark-mode-2);
   --current-color-mode-3:             var(--dark-mode-3);
+  --current-color-mode-4:             var(--dark-mode-4);
+  --current-color-mode-5:             var(--dark-mode-5);
   --current-color-mode-background:    var(--dark-mode-background);
   --current-color-mode-glow:          var(--dark-mode-glow);
 
@@ -49,6 +53,12 @@
   --about-content-title-color:        var(--current-color-mode-2);
   --about-content-info-color:         var(--current-color-mode-3);
   --about-information-padding:        1vw;
+
+  // project
+  --project-content-text-color:       var(--current-color-mode-1);
+  --project-content-background:       var(--current-color-mode-4);
+  --project-content-title-background: var(--current-color-mode-5);
+  --project-information-padding:      1vw;
 
   // contact
   --contact-title-color:              var(--current-color-mode-1);
