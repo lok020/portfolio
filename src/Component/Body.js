@@ -21,7 +21,7 @@ class Body extends Component {
     if (e.target.scrollTop === 0)
       document.documentElement.style.setProperty('--header-background', "transparent");
     else if (e.target.scrollTop !== 0)
-      document.documentElement.style.setProperty('--header-background', "white");
+      document.documentElement.style.setProperty('--header-background', "#191919");
   }
 
   createBody = (current_page) => {
