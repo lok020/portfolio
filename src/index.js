@@ -20,19 +20,26 @@ class Portfolio extends React.Component {
     super(props);
     this.state = {
       current_page: "home",
+      scroll_page: false
     }
   }
-
   
-  changePage = (page_name) => {
+  changePage = (page_name, is_scroll) => {
     this.setState({current_page: page_name});
+    is_scroll && this.setState({scroll_page: true});
+
+  }
+
+  endScroll = () => {
+    this.setState({scroll_page: false});
   }
 
   render() {
     return (
       <div className={"portfolio"}>
         <Header current_page={this.state.current_page} changePage={this.changePage}/>
-        <Body current_page={this.state.current_page}/>
+        <Body current_page={this.state.current_page} changePage={this.changePage}
+              scroll_page={this.state.scroll_page} endScroll={this.endScroll}/>
       </div>
     );
   }

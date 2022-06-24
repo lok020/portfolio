@@ -30,10 +30,9 @@ class Header extends Component {
   // }
 
   HeaderSelected = (e) => {
-    const { current_page, changePage } = this.props;
+    const { changePage } = this.props;
     let page_name = e.target.innerText;
-    if (page_name !== current_page)
-      changePage(page_name);
+    changePage(page_name, true);
   }
   
   createHeaderSelection = (header_selection_list, current_page) => {

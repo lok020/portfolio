@@ -1,51 +1,67 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
 
 import Home from './Home';
 import About from './About';
 import Project from './Project';
 import Contact from './Contact';
 
+import TitleBar from '../Helper/TitleBar';
+
 // CSS & SCSS
 import '../CSS/Body.scss';
 
 class Body extends Component {
-  timer = null;
-
   constructor(props) {
     super(props);
-    this.state = {
-    };
+    this.home_ref = createRef();
+    this.about_ref = createRef();
+    this.project_ref = createRef();
+    this.contact_ref = createRef();
   }
-  
+
   handleScroll = (e) => {
+    const { changePage } = this.props;
     if (e.target.scrollTop === 0)
       document.documentElement.style.setProperty('--header-background', "transparent");
     else if (e.target.scrollTop !== 0)
       document.documentElement.style.setProperty('--header-background', "#191919");
+
+    if (e.target.scrollTop < 490) changePage("home", false);
+    else if (e.target.scrollTop < 1480) changePage("about", false);
+    else if (e.target.scrollTop < 2200) changePage("project", false);
+    else changePage("contact", false);
   }
 
-  createBody = (current_page) => {
-    let display = [];
+  testing = () => {
+    this.home_ref.current.scrollIntoView({ behavior: "smooth" });
+  }
 
-    if (current_page === "home")
-      display.push(<Home key={"home"}/>);
-    else if (current_page === "about")
-      display.push(<About key={"about"}/>);
-    else if (current_page === "project")
-      display.push(<Project key={"project"}/>);
-    else if (current_page === "contact")
-      display.push(<Contact key={"contact"}/>);
-
-
-    return display;
+  scrollPage = () => {
+    const { current_page, endScroll } = this.props;
+    if (current_page === "home") this.home_ref.current.scrollIntoView({ behavior: "smooth" });
+    else if (current_page === "about") this.about_ref.current.scrollIntoView({ behavior: "smooth" });
+    else if (current_page === "project") this.project_ref.current.scrollIntoView({ behavior: "smooth" });
+    else if (current_page === "contact") this.contact_ref.current.scrollIntoView({ behavior: "smooth" });
+    endScroll();
   }
 
   render() {
-    const { current_page } = this.props;
-    
+    const { scroll_page } = this.props;
+    scroll_page && this.scrollPage();
+
     return (
       <div id={"content-body"} className={"body"} onScroll={this.handleScroll}>
-        {this.createBody(current_page)}
+        <div ref={this.home_ref}/>
+        <Home key={"home"}/>
+        <div ref={this.about_ref}/>
+        <TitleBar title="About"/>
+        <About key={"about"}/>
+        <div ref={this.project_ref}/>
+        <TitleBar title="Project"/>
+        <Project key={"project"}/>
+        <div ref={this.contact_ref}/>
+        <TitleBar title="Contact"/>
+        <Contact key={"contact"}/>
       </div>
     );
   }

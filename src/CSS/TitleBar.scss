@@ -1,0 +1,14 @@
+.title-bar{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--current-color-mode-1); 
+    line-height: 1em;
+    margin: 50px 0 50px;
+
+    .title-text{
+        background: var(--current-color-mode-background);
+        color: var(--current-color-mode-1);
+        padding: 0 20px;
+        font-size: 30px;
+    }
+}
