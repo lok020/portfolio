@@ -24,9 +24,9 @@ class Body extends Component {
     else if (e.target.scrollTop !== 0)
       document.documentElement.style.setProperty('--header-background', "#191919");
 
-    if (e.target.scrollTop < 490) changePage("home", false);
-    else if (e.target.scrollTop < 1480) changePage("about", false);
-    else if (e.target.scrollTop < 2200) changePage("project", false);
+    if (e.target.scrollTop < 470) changePage("home", false);
+    else if (e.target.scrollTop < 1350) changePage("about", false);
+    else if (e.target.scrollTop < 1630) changePage("project", false);
     else changePage("contact", false);
   }
 

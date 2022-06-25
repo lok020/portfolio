@@ -54,23 +54,6 @@ class ProjectBlock extends Component {
           <div className='summary-title'>{title}</div>
           <img className={"summary-thumbnail"} src={snapshot} />
         </div>
-
-
-
-        {/* <Col xs="12" className={"title"}>{title}</Col>
-        <Col xs="12" lg="4" className='project-snippet'>
-          <img className={"snapshot"} src={snapshot} />
-          <Button variant="light" className={"link-button"} onClick={this.buttonClicked}>{"Explore"}</Button>
-        </Col>
-        <Col xs="12" lg="8" className='project-content'>
-          {description}
-          <br/><br/>
-          {"Significant Challenges:"}
-          <br/>
-          {challenge}
-          <br/><br/>
-          {"Last update: " + last_update}
-        </Col> */}
       </Col>
     );
   }
