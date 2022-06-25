@@ -1,12 +1,32 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
 
+import TitleBar from '../Helper/TitleBar';
 import RowOfTitleAndInfo from '../Helper/RowOfTitleAndInfo';
 
 class About extends Component {
+  constructor(props) {
+    super(props);
+    this.fade_in = createRef();
+    this.fade_watcher = new IntersectionObserver(elements => {
+      elements.forEach(element => this.setState({in_view: element.isIntersecting}));
+    });
+    this.state = {
+      in_view: false,
+    };
+  }
+
+  componentDidMount = () => {
+    this.fade_watcher.observe(this.fade_in.current);
+  }
+
+  componentWillUnmount = () => {
+    this.fade_watcher.unobserve(this.fade_in.current);
+  }
 
   render() {
     return (
-      <div className={"about"}>
+      <div className={`about fade-in-section ${this.state.in_view ? 'in-window-view' : ''}`} ref={this.fade_in}>
+        <TitleBar title="About"/>
         <div className={"title"}>{"Personal Information"}</div>
         <div className={"information-area"}>
           <RowOfTitleAndInfo title={"First Name:"} info={"Wai Lok"}/>

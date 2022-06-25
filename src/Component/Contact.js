@@ -1,13 +1,33 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
+import TitleBar from '../Helper/TitleBar';
 import ContentBlock from '../Helper/ContentBlock';
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.fade_in = createRef();
+    this.fade_watcher = new IntersectionObserver(elements => {
+      elements.forEach(element => this.setState({in_view: element.isIntersecting}));
+    });
+    this.state = {
+      in_view: false,
+    };
+  }
+
+  componentDidMount = () => {
+    this.fade_watcher.observe(this.fade_in.current);
+  }
+
+  componentWillUnmount = () => {
+    this.fade_watcher.unobserve(this.fade_in.current);
+  }
 
   render() {
     return (
-      <div className={"contact"}>
+      <div className={`contact fade-in-section ${this.state.in_view ? 'in-window-view' : ''}`} ref={this.fade_in}>
+        <TitleBar title="Contact"/>
         <div className={"info"}>
           <ContentBlock
             social_media={"linkedin"}

@@ -5,6 +5,7 @@
   overflow: hidden;
   background: var(--header-background);
   transition: all .3s ease-in-out;
+  z-index: 1;
   
   .header-row {
     height: inherit;

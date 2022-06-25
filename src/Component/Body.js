@@ -5,8 +5,6 @@ import About from './About';
 import Project from './Project';
 import Contact from './Contact';
 
-import TitleBar from '../Helper/TitleBar';
-
 // CSS & SCSS
 import '../CSS/Body.scss';
 
@@ -54,13 +52,10 @@ class Body extends Component {
         <div ref={this.home_ref}/>
         <Home key={"home"}/>
         <div ref={this.about_ref}/>
-        <TitleBar title="About"/>
         <About key={"about"}/>
         <div ref={this.project_ref}/>
-        <TitleBar title="Project"/>
         <Project key={"project"}/>
         <div ref={this.contact_ref}/>
-        <TitleBar title="Contact"/>
         <Contact key={"contact"}/>
       </div>
     );

@@ -8,14 +8,18 @@
   --dark-mode-5:                      #333331;
   --dark-mode-background:             #19202B;
   --dark-mode-glow:                   #FFFFFF;
+  --dark-mode-accent:                 #191919;
 
   // light mode color progression
   // color from light to dark
   --light-mode-1:                     #ADABA4;
   --light-mode-2:                     #86857E;
   --light-mode-3:                     #FFFAEA;
+  --light-mode-4:                     #86857E;
+  --light-mode-5:                     #FFFAEA;
   --light-mode-background:            #FFFFFF;
   --light-mode-glow:                  #000000;
+  --light-mode-accent:                #191919;
 
   --github-color:                     #c9510c;
   --linkedin-color:                   #0072B1;
@@ -31,6 +35,7 @@
   --current-color-mode-5:             var(--dark-mode-5);
   --current-color-mode-background:    var(--dark-mode-background);
   --current-color-mode-glow:          var(--dark-mode-glow);
+  --current-color-mode-accent:        var(--dark-mode-accent);
 
   // scrollbar color control
   --scrollbar-thumb-color:            var(--current-color-mode-1);
@@ -65,6 +70,11 @@
   --contact-content-title-color:      var(--current-color-mode-2);
   --contact-content-info-color:       var(--current-color-mode-3);
 
+  // modal
+  --modal-header-background:          var(--current-color-mode-accent);
+  --modal-body-background:            var(--current-color-mode-background);
+  --modal-text-color:                 var(--current-color-mode-1);
+
   // general
   --border-radius:                    25px;
 }
@@ -88,6 +98,7 @@
   height: 100vh;
   width: 100vw;
   font-family: system-ui;
+  background: var(--current-color-mode-background);
 }
 
 .center-text-in-div {
@@ -95,4 +106,60 @@
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.fade-in-section{
+  opacity: 0;
+  transform: translateY(2vh);
+  visibility: hidden;
+  transition: opacity 1s ease-out, transform .5s ease-out;
+  will-change: opacity, visibility;
+}
+
+.in-window-view{
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.modal{
+  .modal-content{
+    border-radius: var(--border-radius);
+  }
+
+  .modal-header{
+    background: var(--modal-header-background);
+    color: var(--modal-text-color);
+    border: none;
+  }
+
+  .modal-body{
+    background: var(--modal-body-background);
+    color: var(--modal-text-color);
+    border: none;
+
+    .modal-summary{
+      height: inherit;
+      position: relative;
+    }
+
+    .modal-button{
+      width: 100%;
+      background: var(--modal-text-color);
+      color: var(--modal-body-background);
+      border: 5px double var(--modal-body-background);
+      margin-top: 10px;
+      // bottom: 0;
+      // left: 0;
+      // position: absolute;
+    }
+
+    .chanllenge_n_solution{
+      padding: 10px 0;
+    }
+  }
+  
+  .modal-snapshot{
+    width: 100%;
+  }
 }

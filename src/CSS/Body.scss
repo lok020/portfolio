@@ -4,13 +4,12 @@
 }
 
 .body {
-  overflow-y: auto;
-  overflow-x: hidden;
   /* Hide scrollbar for IE, Edge and Firefox */
   // -ms-overflow-style: none;  /* IE and Edge */
   // scrollbar-width: none;  /* Firefox */
+  overflow-y: auto;
+  overflow-x: hidden;
   height: 100vh;
-  background: var(--current-color-mode-background);
 
   .home {
     padding-top: 2vw;
@@ -82,29 +81,28 @@
     padding: 0 4vw;
     
     .info {
-      padding: 8vh 0 0 0;
       color: var(--project-content-text-color);
 
-      .title {
-        //text-align: center;
-        font-size: 2em;
-      }
-      
-      .project-snippet{
-        .snapshot{
-          width: 100%;
+      .summary {
+        cursor: pointer;
+        padding: 5px;
+
+        .summary-title{
+          display: flex;
+          justify-content: center;
         }
-  
-        .link-button {
+
+        .summary-thumbnail{
           width: 100%;
-          margin-top: 10px;
         }
       }
 
-      .project-content{
-        height: 300px;
-        overflow: auto;
-        white-space: pre-wrap;
+      .summary:hover{
+        transform: scale(1.05);
+        transition: transform .25s ease-out;
+        will-change: transform;
+        background: var(--project-content-title-background);
+        border-radius: 5px;
       }
     }
   }
