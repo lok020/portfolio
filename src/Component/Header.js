@@ -6,7 +6,6 @@ import { Row, Col } from 'react-bootstrap';
 import '../CSS/Header.scss';
 
 class Header extends Component {
-  header_selection_list = [ "home", "about", "project", "contact" ];
   //timeloop = null;
 
   constructor(props) {
@@ -52,12 +51,12 @@ class Header extends Component {
   }
 
   render() {
-    const { current_page } = this.props;
+    const { current_page, header_selection_list } = this.props;
     return (
       <div className={"header"}>
         <Row className={"header-row"}>
           <Col xs="12" className={"header-tab"}>
-              {this.createHeaderSelection(this.header_selection_list, current_page)}
+              {this.createHeaderSelection(header_selection_list, current_page)}
           </Col>
           {/* <Col xs="3" className={"header-date-time center-text-in-div"}>{this.state.date_time}</Col> */}
         </Row>

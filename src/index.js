@@ -16,6 +16,8 @@ import './CSS/Portfolio.scss';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 
 class Portfolio extends React.Component {
+  header_selection_list = [ "home", "about", "project", "contact" ];
+
   constructor(props) {
     super(props);
     this.state = {
@@ -37,7 +39,8 @@ class Portfolio extends React.Component {
   render() {
     return (
       <div className={"portfolio"}>
-        <Header current_page={this.state.current_page} changePage={this.changePage}/>
+        <Header current_page={this.state.current_page} changePage={this.changePage}
+                header_selection_list={this.header_selection_list}/>
         <Body current_page={this.state.current_page} changePage={this.changePage}
               scroll_page={this.state.scroll_page} endScroll={this.endScroll}/>
       </div>
