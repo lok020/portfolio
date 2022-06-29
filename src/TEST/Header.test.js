@@ -1,9 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import Header from '../Component/Header';
 
+const page = "Home";
+
 test('render Header.js with 0 category', () => {
-    const { no_item } = render(<Header current_page={"Home"} changePage={() => {}}
-                   header_selection_list={[]}/>);
+    const { no_item } = render(<Header current_page={page} changePage={() => {}} header_selection_list={[]}/>);
     expect(no_item).toBeValid;
 });
 
@@ -20,9 +21,7 @@ test('render Header.js with 100 categories', () => {
   const list = generateNthItemsInArray(100);
   const [ array_last_item ] = list.slice(-1);
 
-  render(<Header current_page={"Home"} changePage={() => {}}
-                 header_selection_list={list}/>);
-  console.log(array_last_item);
+  render( <Header current_page={page} changePage={() => {}} header_selection_list={list}/> );
   const last_item = screen.getByText(array_last_item);
   expect(last_item).toBeInTheDocument();
 });
@@ -36,8 +35,7 @@ test('render Header.js and display last item', () => {
     is_scroll && this.setState({scroll_page: true});
   }
 
-  render(<Header current_page={"Home"} changePage={changePage}
-                 header_selection_list={list}/>);
+  render( <Header current_page={page} changePage={changePage} header_selection_list={list}/> );
   const last_item = screen.getByText(array_last_item);
   expect(last_item).toBeInTheDocument();
 });
