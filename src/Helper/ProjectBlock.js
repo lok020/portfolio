@@ -20,7 +20,7 @@ class ProjectBlock extends Component {
   }
   
   render() {
-    const { title, snapshot, description, challenge_n_solution, last_update } = this.props;
+    const { title, snapshot, description, challenge_n_solution, road_map, last_update } = this.props;
     
     return (
       <Col xs="12" lg="4" className={"info"}>
@@ -41,8 +41,15 @@ class ProjectBlock extends Component {
             <br/>
             {"Significant Challenges & Solutions:"}
             {challenge_n_solution.map(cns => 
-              <div key={cns} className="chanllenge_n_solution">
+              <div key={cns} className="chanllenge-n-solution">
                 {cns}
+              </div>
+            )}
+            <br/><br/>
+            {"Road Map:"}
+            {road_map.map(rm => 
+              <div key={rm} className="road-map">
+                {rm}
               </div>
             )}
             <br/><br/>

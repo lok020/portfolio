@@ -45,6 +45,12 @@ class Project extends Component {
                 "2. Combination between gh-pages, and router. Because gh-pages host the website on the github site using their designed name, the route act a bit odd. The way to fix the continuous display of error page is to add the project base name, in this case it's 'tic_tac_toe'. By adding the basename, it recognize the path and display accordingly.",
                 "3. The logical order between player winning, game draw, and next move. Because there is a order for checking the game status, code can get a bit messy. The solution is to write them in function form, and call them when it's needed, or through callback. That minimize the chance causing the game act in chaos, and make the code alot nicer to manage.",
                 "undergoing..."]}
+            road_map={
+              [ "1. PVE mode - Allow user to play with a bot. Could included different difficulties.",
+                "2. Setting page - Allow user to have control on their game.",
+                "3. Bonus - Mysterious.",
+                "4. upgrade UI - Let user to play and relax through a small, and quick game during their days.",
+              ]}
             last_update={"29th June 2022"}
             button_link={"https://lok020.github.io/tic_tac_toe/"}/>
           <ProjectBlock
@@ -53,6 +59,12 @@ class Project extends Component {
             description={"User Management made using HTML, CSS, javascript, React, and Font Awesome icons."}
             challenge_n_solution={
               ["undergoing..."]}
+            road_map={
+              [ "1. Design & Develope pages - continuously developing on the webpage, and finish the design.",
+                "2. Fetch users from AWS - Create a way for user to fetch user list from AWS S3.",
+                "3. Add animation - Add animation to increase interested for user on using user management.",
+                "4. Allow setting for mass user usage - Create a way for any user to fetch information from their database through URL. (May not work since every JSON/file type would look different)",
+              ]}
             last_update={"26th June 2022"}
             button_link={"https://lok020.github.io/user_management/"}/>
           <ProjectBlock
@@ -63,6 +75,11 @@ class Project extends Component {
               ["1. Compare to Font Awesome (FA), Google material icon selection is limited. In this project, I use google material icons to display all the icons on the page. I worked with FA in the past and decided to work with Google material icon this time. The solution is to pick the closest-looking icons to represent the weather condition although they are not designed for it. For example, I use the no WIFI signal icon to represent the pressure weather condition because out of all the icons, that is the closest one can represent it.",
                "2. UI design is subjective. However, there is still guideline to follow. For instance, modern design tends to be leaning toward minimal design and rounded corners. The solution is to utilize spacing to construct a modern design as my based. Adding modern elements such as rounded corners, muted color, icon representation, and the minimal words used. Give users a comfortable UX experience, and a pleasant UI design to look at.",
                "3. Information censorship on Github. With the use of an OpenWeather private API key, any code put online can be sensitive. Especially when I host the website on Github, and store my source code on their server. The solution to this problem is using an environment variable (dotenv) to contain all the sensitive information, such as the private API key. Combining the use of gitignore file, I can exclude my custom dotenv file that contains my private information from exposing it to anyone browsing my source code."]}
+            road_map={
+              [ "1. Add more cities - Allow more cities to be search in the weather app. Expand the userbase, and prevent the user group to be selected cities.",
+                "2. Allow searching using Latitude and Longitude - Adding area for user type in coordinate as they desired. May as well as for permission to access through current location from user.",
+                "3. Add forecast - Enable user to see what the future weather will be like.",
+              ]}
             last_update={"7th June 2022"}
             button_link={"https://lok020.github.io/weather/"}/>
           <ProjectBlock
@@ -73,6 +90,11 @@ class Project extends Component {
               ["1. The representation of multiplication, and division in the sense of how the general public portrays is different than the programming language. The calculator page is designed for use by everyone, in school. The way to solve this is when the equal button is being pressed, I will take the whole equation and transform all multiplication and division from the general representation into the programming representation by using the replace function.",
                "2. The decimal restriction in every string of numbers. Adding a dot between numbers is easy, but in mathematics in every string of numbers, there can only exist one dot, and every string of numbers behind that dot is considered decimal. Also, have to consider in the whole equation there can be more than one string of numbers. The solution is to check when the dot button is being pressed. separate all operators and the string of numbers from the equation, then get the last string of numbers and check for the dot existence. If the dot is not existing, then simply add one, otherwise, ignore it.",
                "3. The percentage does not work in the evaluate function. When the equation includes percentages being evaluated, often it would not return the correct answer. The simple solution is when the user press the equal button, locates all string of numbers attached to the percentage, removes the percentage sign, and manually multiplies the string of numbers by 0.01(the definition of percentage)."]}
+            road_map={
+              [ "1. Expand mathematical functionality - Adding more mathematical operation into the web app. Expand the use of calculator.",
+                "2. Update UI - Update the outlook of the calculator, give a comfortable and pleasant experience for user.",
+                "3. Add history functionality - Allow user to look back at previous calculation.",
+              ]}
             last_update={"23rd May 2022"}
             button_link={"https://lok020.github.io/calculator/"}/>
         </Row>
