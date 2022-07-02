@@ -34,19 +34,21 @@ class About extends Component {
           <RowOfTitleAndInfo title={"Sex:"} info={"Male"}/>
           <RowOfTitleAndInfo title={"Languages:"} info={"English (Fluent), Cantonese (Native), Mandarin (Fluent)"}/>
           <RowOfTitleAndInfo title={"Hometown:"} info={"Hong Kong"}/>
+          <RowOfTitleAndInfo title={"Nationality:"} info={"British national (overseas) / BNO"}/>
         </div>
 
         <div className={"title"}>{"Programming Information"}</div>
         <div className={"information-area"}>
-          <RowOfTitleAndInfo title={"Programming Languages:"} info={"JavaScript, HTML/CSS, C, C++, C#, SQL"}/>
+          <RowOfTitleAndInfo title={"Experienced Languages:"} info={"JavaScript, HTML/CSS, C, C++, C#, SQL, Python, Java"}/>
           <RowOfTitleAndInfo title={"Experienced Tools:"} info={"React, Visual Studio Code, PhpMyAdmin, Npm, Node.js, Unity"}/>
+          <RowOfTitleAndInfo title={"Experienced npm:"} info={"dotenv, aws-sdk, react-router-dom, react-bootstrap, amchart, material-ui"}/>
         </div>
         
         <div className={"title"}>{"Experience"}</div>
         <div className={"information-area"}>
           <RowOfTitleAndInfo title={"Web Application Developer:"}
           info={"Zetakey Solutions Limited, Hong Kong"} sub_info={"August 2018 - April 2022"}/>
-          <RowOfTitleAndInfo title={"Web developer:"}
+          <RowOfTitleAndInfo title={"Web Developer:"}
           info={"Splendor Design & Construction Limited, Hong Kong"} sub_info={"June 2016 - August 2016"}/>
         </div>
         

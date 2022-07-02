@@ -1,25 +1,19 @@
 :root{
   // dark mode color progression
   // color from dark to light
-  --dark-mode-1:                      #FFFAEA;
-  --dark-mode-2:                      #86857E;
-  --dark-mode-3:                      #ADABA4;
-  --dark-mode-4:                      #565552;
-  --dark-mode-5:                      #333331;
-  --dark-mode-background:             #19202B;
-  --dark-mode-glow:                   #FFFFFF;
-  --dark-mode-accent:                 #191919;
+  --dark-mode-1:                      #141922;
+  --dark-mode-2:                      #19202B;
+  --dark-mode-3:                      #977B62;
+  --dark-mode-4:                      #FFCB9A;
+  --dark-mode-5:                      #ECF5F3;
 
   // light mode color progression
   // color from light to dark
-  --light-mode-1:                     #ADABA4;
-  --light-mode-2:                     #86857E;
-  --light-mode-3:                     #FFFAEA;
-  --light-mode-4:                     #86857E;
-  --light-mode-5:                     #FFFAEA;
-  --light-mode-background:            #FFFFFF;
-  --light-mode-glow:                  #000000;
-  --light-mode-accent:                #191919;
+  --light-mode-1:                     #B6D0DE;
+  --light-mode-2:                     #FFF;
+  --light-mode-3:                     #5C96B5;
+  --light-mode-4:                     #3B6F8A;
+  --light-mode-5:                     #242C2E;
 
   --github-color:                     #c9510c;
   --linkedin-color:                   #0072B1;
@@ -33,47 +27,43 @@
   --current-color-mode-3:             var(--dark-mode-3);
   --current-color-mode-4:             var(--dark-mode-4);
   --current-color-mode-5:             var(--dark-mode-5);
-  --current-color-mode-background:    var(--dark-mode-background);
-  --current-color-mode-glow:          var(--dark-mode-glow);
-  --current-color-mode-accent:        var(--dark-mode-accent);
 
   // scrollbar color control
   --scrollbar-thumb-color:            var(--current-color-mode-3);
-  --scrollbar-hover-color:            var(--current-color-mode-2);
-  --scrollbar-track-color:            var(--current-color-mode-5);
+  --scrollbar-hover-color:            var(--current-color-mode-4);
+  --scrollbar-track-color:            var(--current-color-mode-1);
 
   // header
   --header-background:                  transparent;
-  --header-tab-default-color:         var(--current-color-mode-2);
-  --header-tab-hover:                 var(--current-color-mode-1);
-  --header-tab-selected:              var(--current-color-mode-1);
-  --header-tab-glow:                  var(--current-color-mode-glow);
+  --header-tab-default-color:         var(--current-color-mode-3);
+  --header-tab-hover:                 var(--current-color-mode-4);
+  --header-tab-selected:              var(--current-color-mode-4);
+  --header-tab-glow:                  var(--current-color-mode-2);
 
   // home
-  --home-text-color:                  var(--current-color-mode-1);
-  --home-paragraph-color:             var(--current-color-mode-2);
+  --home-text-color:                  var(--current-color-mode-4);
+  --home-sub-title-color:             var(--current-color-mode-5);
 
   // about
-  --about-title-color:                var(--current-color-mode-1);
-  --about-content-title-color:        var(--current-color-mode-2);
-  --about-content-info-color:         var(--current-color-mode-3);
+  --about-title-color:                var(--current-color-mode-4);
+  --about-content-title-color:        var(--current-color-mode-3);
+  --about-content-info-color:         var(--current-color-mode-5);
   --about-information-padding:        1vw;
 
   // project
-  --project-content-text-color:       var(--current-color-mode-1);
-  --project-content-background:       var(--current-color-mode-4);
-  --project-content-title-background: var(--current-color-mode-5);
+  --project-content-text-color:       var(--current-color-mode-5);
+  --project-content-title-background: var(--current-color-mode-3);
   --project-information-padding:      1vw;
 
   // contact
-  --contact-title-color:              var(--current-color-mode-1);
-  --contact-content-title-color:      var(--current-color-mode-2);
-  --contact-content-info-color:       var(--current-color-mode-3);
+  --contact-title-color:              var(--current-color-mode-4);
+  --contact-icon-color:               var(--current-color-mode-5);
+  --contact-border-color:             var(--current-color-mode-1);
 
   // modal
-  --modal-header-background:          var(--current-color-mode-accent);
-  --modal-body-background:            var(--current-color-mode-background);
-  --modal-text-color:                 var(--current-color-mode-1);
+  --modal-header-background:          var(--current-color-mode-3);
+  --modal-body-background:            var(--current-color-mode-2);
+  --modal-text-color:                 var(--current-color-mode-5);
 
   // general
   --border-radius:                    25px;
@@ -98,7 +88,11 @@
   height: 100vh;
   width: 100vw;
   font-family: system-ui;
-  background: var(--current-color-mode-background);
+  background: var(--current-color-mode-2);
+  // font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  // font-family: monospace;       // terminal text
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: all .3s ease-in-out;
 }
 
 .center-text-in-div {
@@ -123,6 +117,7 @@
 }
 
 .modal{
+  // font-family: monospace;       // terminal text
   .modal-content{
     border-radius: var(--border-radius);
   }

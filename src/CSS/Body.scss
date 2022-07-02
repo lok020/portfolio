@@ -12,34 +12,55 @@
   height: 100vh;
 
   .home {
-    padding-top: 2vw;
+    padding-top: 5vw;
 
     .home-info {
       padding: 10vw 4vw 0 4vw;
-      color: var(--home-text-color);
 
-      .title {
+      .greeting-title {
+        font-size: 2em;
+        opacity: 1;
+        color: var(--home-sub-title-color);
+      }
+
+      .title-1 {
+        font-size: 5em;
+        // text-decoration: underline;
+        color: var(--home-text-color);
+      }
+
+      .title-2 {
         font-size: 3em;
+        margin-top: -2.5vw;
+        // transform: scale(1, -1);
+        // -moz-transform: scale(1, -1);
+        // -webkit-transform: scale(1, -1);
+        // -o-transform: scale(1, -1);
+        // -ms-transform: scale(1, -1);
+        // transform: scale(1, -1);
+        opacity: 0.5;
+        color: var(--home-text-color);
       }
 
       .sub-title {
-        font-size: 1.75em;
-        margin-top: -1vw;
-      }
-
-      .paragraph {
-        padding: 30px 0 0 0;
-        font-size: 1.25em;
+        font-size: 1em;
         white-space: pre-wrap;
-        color: var(--home-paragraph-color)
+        margin-top: 2vw;
+        opacity: 0.6;
+        color: var(--home-sub-title-color);
+        padding-bottom: 30px;
       }
     }
 
     .home-portrait {
-      padding: 5vw 25px 25px 25px;
+      padding: 0 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
       .portrait{
-        width: 100%;
+        width: 90%;
+        height: 100%;
         border-radius: var(--border-radius);
       }
     }
@@ -86,6 +107,9 @@
       .summary {
         cursor: pointer;
         padding: 5px;
+        margin: 5px 0;
+        border: 1px solid var(--project-content-title-background);
+        border-radius: 5px;
 
         .summary-title{
           display: flex;
@@ -138,6 +162,8 @@
 
         .image {
           margin-top: -55px;
+          color: var(--contact-icon-color);
+          text-shadow: 1px 1px var(--contact-border-color);
 
           .fa {
             padding: 20px;
@@ -148,7 +174,8 @@
         }
 
         .content {
-          //text-decoration: none;
+          color: var(--contact-icon-color);
+          text-shadow: 1px 1px var(--contact-border-color);
 
           .message {
             font-size: 1.5em;

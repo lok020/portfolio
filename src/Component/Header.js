@@ -11,6 +11,7 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      is_dark_mode: true
       //date_time: ""
     };
   }
@@ -50,13 +51,44 @@ class Header extends Component {
     return display;
   }
 
+  handleColorModeBtn = () => {
+    if (this.state.is_dark_mode){
+      document.documentElement.style.setProperty('--current-color-mode-1', "var(--light-mode-1)");
+      document.documentElement.style.setProperty('--current-color-mode-2', "var(--light-mode-2)");
+      document.documentElement.style.setProperty('--current-color-mode-3', "var(--light-mode-3)");
+      document.documentElement.style.setProperty('--current-color-mode-4', "var(--light-mode-4)");
+      document.documentElement.style.setProperty('--current-color-mode-5', "var(--light-mode-5)");
+    }
+    else{
+      document.documentElement.style.setProperty('--current-color-mode-1', "var(--dark-mode-1)");
+      document.documentElement.style.setProperty('--current-color-mode-2', "var(--dark-mode-2)");
+      document.documentElement.style.setProperty('--current-color-mode-3', "var(--dark-mode-3)");
+      document.documentElement.style.setProperty('--current-color-mode-4', "var(--dark-mode-4)");
+      document.documentElement.style.setProperty('--current-color-mode-5', "var(--dark-mode-5)");
+    }
+    this.setState({is_dark_mode: !this.state.is_dark_mode});
+  }
+
   render() {
     const { current_page, header_selection_list } = this.props;
     return (
       <div className={"header"}>
         <Row className={"header-row"}>
-          <Col xs="12" className={"header-tab"}>
+          <Col xs="12" lg="12" className={"header-tab"}>
+              <div className='color-mode-logo'>
+                {this.state.is_dark_mode ?
+                <div className='dark-mode'>
+                  <div className='cloud'/>
+                  <div className='moon'/>
+                </div>
+                :
+                <div className='light-mode'>
+                  <div className='sun'/>
+                </div>
+                }
+              </div>
               {this.createHeaderSelection(header_selection_list, current_page)}
+              <div className='color-mode-btn' onClick={this.handleColorModeBtn}><i className={"fa fa-adjust"}/></div>
           </Col>
           {/* <Col xs="3" className={"header-date-time center-text-in-div"}>{this.state.date_time}</Col> */}
         </Row>

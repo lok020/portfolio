@@ -22,7 +22,7 @@ class Body extends Component {
     if (e.target.scrollTop === 0)
       document.documentElement.style.setProperty('--header-background', "transparent");
     else if (e.target.scrollTop !== 0)
-      document.documentElement.style.setProperty('--header-background', "#191919");
+      document.documentElement.style.setProperty('--header-background', "var(--current-color-mode-1)");
 
     if (e.target.scrollTop < 470) changePage("home", false);
     else if (e.target.scrollTop < 1350) changePage("about", false);

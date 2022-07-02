@@ -1,5 +1,5 @@
 import React, { Component, createRef } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Button } from 'react-bootstrap';
 
 // Image
 import Portrait from '../Image/wai_lok.png';
@@ -28,17 +28,13 @@ class Home extends Component {
     return (
       <div className={`home fade-in-section ${this.state.in_view ? 'in-window-view' : ''}`} ref={this.fade_in}>
         <Row>
-          <Col xs="12" lg="8" className={"home-info"}>
-            <div className={"title"}>{"Wai Lok Cheng"}</div>
-            <div className={"sub-title"}>{"Front-end Developer"}</div>
-            <div className={"paragraph"}>
-              {"Born and raised in Hong Kong.\n"}
-              {"Graduated from Washington State University, USA - Bachelor of Science in Computer Science.\n"}
-              {"Over 3 years of experience as a Web Application Developer specialized in front end development.\n"}
-              {"Currently relocated to London, United Kingdom."}
-              </div>
+          <Col xs="12" lg="7" className={"home-info"}>
+            <div className={"greeting-title"}>{"Good day, I'm"}</div>
+            <div className={"title-1"}>{"Wai Lok Cheng"}</div>
+            <div className={"title-2"}>{"Web Developer"}</div>
+            <div className={"sub-title"}>{"Based in London, UK. 3+ years of experience in web development, specializing in front-end development."}</div>
           </Col>
-          <Col xs="12" lg="4" className={"home-portrait"}>
+          <Col xs="12" lg="5" className={"home-portrait"}>
             <img className={"portrait"} src={Portrait} alt="portrait" />
           </Col>
         </Row>

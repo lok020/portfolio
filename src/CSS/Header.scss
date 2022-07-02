@@ -13,14 +13,112 @@
     //filter: invert(1);
     //mix-blend-mode: difference;
 
-    .header-logo {
-    }
-
     .header-tab {
       height: 100%;
       display: inline-flex;
       justify-content: center;
       align-items: center;
+
+      .color-mode-logo{
+        width: 100px;
+        height: inherit;
+        position: absolute;
+        left: 0;
+
+        .dark-mode{
+          width: inherit;
+          height: inherit;
+          
+          .moon{
+            display:inline-block;
+            border-radius:50%;
+            height: 40px;
+            width: 40px;
+            margin: 5px -20px;
+            background:yellow;
+            box-shadow: 0 0 10px yellow,
+                          0 0 60px yellow,
+                          0 0 200px white,
+                          inset 0 0 80px white;
+          }
+
+          .cloud {
+            display: inline-flex;
+            background:white;
+            width:30px;
+            height:20px; 
+            border-radius:50%;
+            position:relative;
+            top:-10px;
+            -webkit-filter: blur(4px);
+            left:-10px;
+            animation: 15000ms cloudAnimation linear infinite;
+            opacity:0.76;
+          }
+          .cloud:before {
+            content:"";
+            display:inline-flex;
+            background:white;
+            width:40px;
+            height:10px; 
+            -webkit-filter: blur(5px);
+            position:relative;
+            border-radius:50%;
+            top:-5px;
+            left:15px;
+          }
+          .cloud:after {
+            content:"";
+            display:inline-flex;
+            background:white;
+            width:70px;
+            height:15px; 
+            -webkit-filter: blur(3px);
+            position:relative;
+            border-radius:50%;
+            top:4px;
+            left:10px;
+          }
+          
+          @keyframes cloudAnimation {
+            0%{
+              transform: translate(-50px,0);
+              opacity: 1;
+            }
+            100% {
+              transform: translate(100px, 0px);
+              opacity: 0;
+            }
+          }
+        }
+
+        .light-mode{
+          width: inherit;
+          height: inherit;
+
+          .sun{
+            display:inline-block;
+            border-radius:50%;
+            height: 40px;
+            width: 40px;
+            margin: 5px 10px;
+            background:orange;
+            box-shadow: 0 0 10px orange,
+                          0 0 60px orange,
+                          0 0 200px yellow,
+                          inset 0 0 80px yellow;
+          }
+        }
+      }
+
+      .color-mode-btn{
+        color: var(--header-tab-default-color);
+        font-size: 1.5em;
+        position: absolute;
+        right: 0;
+        padding-right: 15px;
+        cursor: pointer;
+      }
       
       .header-tab-selection {
         cursor: pointer;
@@ -50,11 +148,11 @@
 
       @keyframes glow {
         from {
-          text-shadow: 0 0 2px var(--dark-mode-background), 0 0 5px var(--dark-mode-background), 0 0 7px var(--header-tab-glow), 0 0 10px var(--header-tab-glow), 0 0 12px var(--header-tab-glow), 0 0 15px var(--header-tab-glow), 0 0 22px var(--header-tab-glow);
+          text-shadow: 0 0 2px var(--current-color-mode-2), 0 0 5px var(--current-color-mode-2), 0 0 7px var(--header-tab-glow), 0 0 10px var(--header-tab-glow), 0 0 12px var(--header-tab-glow), 0 0 15px var(--header-tab-glow), 0 0 22px var(--header-tab-glow);
         }
         
         to {
-          text-shadow: 0 0 5px var(--dark-mode-background), 0 0 7px var(--header-tab-glow), 0 0 10px var(--header-tab-glow), 0 0 12px;
+          text-shadow: 0 0 5px var(--current-color-mode-2), 0 0 7px var(--header-tab-glow), 0 0 10px var(--header-tab-glow), 0 0 12px;
         }
       }
       
