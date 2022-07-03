@@ -1,4 +1,5 @@
 import React, { Component, createRef } from 'react';
+import { Button } from 'react-bootstrap';
 
 import TitleBar from '../Helper/TitleBar';
 import RowOfTitleAndInfo from '../Helper/RowOfTitleAndInfo';
@@ -59,6 +60,10 @@ class About extends Component {
           <RowOfTitleAndInfo title={"Community College:"}
           info={"Everett Community College, USA - Associate in Arts and Sciences"} sub_info={"March 2013"}/>
         </div>
+
+        
+        <div className={"title"}>{"Resume"}</div>
+        <Button>Download Resume</Button>
       </div>
     );
   }

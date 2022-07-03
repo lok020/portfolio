@@ -24,10 +24,15 @@ class Body extends Component {
     else if (e.target.scrollTop !== 0)
       document.documentElement.style.setProperty('--header-background', "var(--current-color-mode-1)");
 
-    if (e.target.scrollTop < 470) changePage("home", false);
-    else if (e.target.scrollTop < 1350) changePage("about", false);
-    else if (e.target.scrollTop < 1630) changePage("project", false);
-    else changePage("contact", false);
+    // if (e.target.scrollTop < 900) changePage("home", false);
+    // else if (e.target.scrollTop < 2400) changePage("about", false);
+    // else if (e.target.scrollTop < 3500) changePage("project", false);
+    // else changePage("contact", false);
+
+    if (e.target.innerText.includes("Contact")) changePage("contact", false);
+    else if (e.target.innerText.includes("Project")) changePage("project", false);
+    else if (e.target.innerText.includes("About")) changePage("about", false);
+    else if (e.target.innerText.includes("Good day")) changePage("home", false);
   }
 
   testing = () => {

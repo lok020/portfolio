@@ -79,7 +79,11 @@ class Header extends Component {
                 {this.state.is_dark_mode ?
                 <div className='dark-mode'>
                   <div className='cloud'/>
-                  <div className='moon'/>
+                  <div className='moon'>
+                    <div className='moon-cover'>
+
+                    </div>
+                  </div>
                 </div>
                 :
                 <div className='light-mode'>

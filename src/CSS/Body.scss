@@ -15,23 +15,26 @@
     padding-top: 5vw;
 
     .home-info {
-      padding: 10vw 4vw 0 4vw;
+      padding: 14vw 4vw 7vw 4vw;
 
       .greeting-title {
-        font-size: 2em;
+        //font-size: 2em;
+        font-size: 1.75vmax;
         opacity: 1;
         color: var(--home-sub-title-color);
       }
 
       .title-1 {
-        font-size: 5em;
+        //font-size: 5em;
+        font-size: 5vmax;
         // text-decoration: underline;
         color: var(--home-text-color);
       }
 
       .title-2 {
-        font-size: 3em;
-        margin-top: -2.5vw;
+        //font-size: 3em;
+        font-size: 3vmax;
+        margin-top: -2.5vmax;
         // transform: scale(1, -1);
         // -moz-transform: scale(1, -1);
         // -webkit-transform: scale(1, -1);
@@ -44,6 +47,7 @@
 
       .sub-title {
         font-size: 1em;
+        //font-size: 1vmax;
         white-space: pre-wrap;
         margin-top: 2vw;
         opacity: 0.6;
@@ -59,7 +63,7 @@
         align-items: center;
 
       .portrait{
-        width: 90%;
+        width: 100%;
         height: 100%;
         border-radius: var(--border-radius);
       }
