@@ -61,9 +61,12 @@ class About extends Component {
           info={"Everett Community College, USA - Associate in Arts and Sciences"} sub_info={"March 2013"}/>
         </div>
 
-        
-        <div className={"title"}>{"Resume"}</div>
-        <Button>Download Resume</Button>
+        <br/><br/>
+        <div className='resume-btn'>
+          <a href={require("../PDF/resume.pdf")} download="resume_wai_lok_cheng" className='resume-btn-text'>
+            {"Download Resume"}
+          </a>
+        </div>
       </div>
     );
   }

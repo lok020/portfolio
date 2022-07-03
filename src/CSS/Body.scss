@@ -95,6 +95,24 @@
       }
     }
 
+    .resume-btn {
+      background: var(--about-content-title-color);
+      border: none;
+      width: 200px;
+      height: 50px;
+      border-radius: var(--border-radius);
+
+      .resume-btn-text{
+        color: var(--about-content-info-color);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      }
+    }
+
     .information-area {
       // border: 1px solid var(--current-color-mode-2);
       // border-radius: var(--border-radius);
