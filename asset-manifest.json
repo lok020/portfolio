@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0b8ce293.css",
-    "main.js": "/portfolio/static/js/main.050bb17c.js",
+    "main.css": "/portfolio/static/css/main.c618e14c.css",
+    "main.js": "/portfolio/static/js/main.18a076bd.js",
     "static/media/wai_lok.png": "/portfolio/static/media/wai_lok.67f56046af02d93995db.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/portfolio/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/portfolio/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/portfolio/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/portfolio/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.a704e239c8b85d4d2ba1.pdf",
     "static/media/project_2.png": "/portfolio/static/media/project_2.68e57ea229992a1c6e29.png",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/portfolio/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/project_4.png": "/portfolio/static/media/project_4.0682ec997ba13cfbfb49.png",
     "static/media/project_3.png": "/portfolio/static/media/project_3.a1449a5d0aeee03af1f8.png",
     "static/media/project_1.png": "/portfolio/static/media/project_1.0350806cf11ed56c5e63.png",
     "index.html": "/portfolio/index.html",
-    "main.0b8ce293.css.map": "/portfolio/static/css/main.0b8ce293.css.map",
-    "main.050bb17c.js.map": "/portfolio/static/js/main.050bb17c.js.map"
+    "main.c618e14c.css.map": "/portfolio/static/css/main.c618e14c.css.map",
+    "main.18a076bd.js.map": "/portfolio/static/js/main.18a076bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b8ce293.css",
-    "static/js/main.050bb17c.js"
+    "static/css/main.c618e14c.css",
+    "static/js/main.18a076bd.js"
   ]
 }
