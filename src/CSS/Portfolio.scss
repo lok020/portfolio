@@ -10,7 +10,7 @@
   // light mode color progression
   // color from light to dark
   --light-mode-1:                     #B6D0DE;
-  --light-mode-2:                     #FFF;
+  --light-mode-2:                     #F9F9F9;
   --light-mode-3:                     #5C96B5;
   --light-mode-4:                     #3B6F8A;
   --light-mode-5:                     #242C2E;
@@ -52,7 +52,7 @@
 
   // project
   --project-content-text-color:       var(--current-color-mode-5);
-  --project-content-title-background: var(--current-color-mode-3);
+  --project-content-title-background: var(--current-color-mode-1);
   --project-information-padding:      1vw;
 
   // contact
@@ -61,9 +61,10 @@
   --contact-border-color:             var(--current-color-mode-1);
 
   // modal
-  --modal-header-background:          var(--current-color-mode-3);
+  --modal-header-background:          var(--current-color-mode-1);
   --modal-body-background:            var(--current-color-mode-2);
-  --modal-text-color:                 var(--current-color-mode-5);
+  --modal-title-text-color:           var(--current-color-mode-5);
+  --modal-content-text-color:         var(--current-color-mode-4);
 
   // general
   --border-radius:                    15px;
@@ -124,23 +125,23 @@
 
   .modal-header{
     background: var(--modal-header-background);
-    color: var(--modal-text-color);
+    color: var(--modal-title-text-color);
     border: none;
   }
 
   .modal-body{
     background: var(--modal-body-background);
-    color: var(--modal-text-color);
     border: none;
 
     .modal-summary{
       height: inherit;
       position: relative;
+      color: var(--modal-content-text-color);
     }
 
     .modal-button{
       width: 100%;
-      background: var(--modal-text-color);
+      background: var(--modal-content-text-color);
       color: var(--modal-body-background);
       border: 5px double var(--modal-body-background);
       margin-top: 10px;
@@ -149,12 +150,18 @@
       // position: absolute;
     }
 
+    .modal-title{
+      color: var(--modal-content-text-color);
+    }
+
     .chanllenge-n-solution{
       padding: 10px 0;
+      color: var(--modal-title-text-color);
     }
 
     .road-map{
       padding: 10px 0;
+      color: var(--modal-title-text-color);
     }
   }
   

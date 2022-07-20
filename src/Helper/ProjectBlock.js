@@ -39,21 +39,21 @@ class ProjectBlock extends Component {
               </Col>
             </Row>
             <br/>
-            {"Significant Challenges & Solutions:"}
+            <b className='modal-title'>{"Significant Challenges & Solutions:"}</b>
             {challenge_n_solution.map(cns => 
               <div key={cns} className="chanllenge-n-solution">
                 {cns}
               </div>
             )}
             <br/><br/>
-            {"Road Map:"}
+            <b className='modal-title'>{"Road Map:"}</b>
             {road_map.map(rm => 
               <div key={rm} className="road-map">
                 {rm}
               </div>
             )}
             <br/><br/>
-            {"Last update: " + last_update}
+            <b className='modal-title'>{"Last update: " + last_update}</b>
           </Modal.Body>
         </Modal>
         
