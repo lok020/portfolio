@@ -45,7 +45,7 @@ class About extends Component {
           <RowOfTitleAndInfo title={"Framework:"} info={"Next.js"}/>
           <RowOfTitleAndInfo title={"Favorite IDE:"} info={"Visual Studio Code, Eclipse"}/>
           <RowOfTitleAndInfo title={"Tools:"} info={"Git, Lighthouse, Tailwind CSS, Google Tag Manager, PhpMyAdmin, Npm, Node.js, Unity"}/>
-          <RowOfTitleAndInfo title={"Npm Packages:"} info={"graphql-tag, dotenv, react-router-dom, react-bootstrap, amchart, material-ui"}/>
+          <RowOfTitleAndInfo title={"Npm Packages:"} info={"graphql-tag, dotenv, sanitize-html, lodash, aws-sdk, react-router-dom, react-bootstrap, amchart, material-ui"}/>
         </div>
         
         <div className={"title"}>{"Experience"}</div>
