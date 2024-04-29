@@ -54,20 +54,6 @@ class Project extends Component {
             last_update={"29th June 2022"}
             button_link={"https://lok020.github.io/tic_tac_toe/"}/>
           <ProjectBlock
-            title={"User Management"}
-            snapshot={project_3_snapshot}
-            description={"User Management made using HTML, CSS, javascript, React, and Font Awesome icons."}
-            challenge_n_solution={
-              ["undergoing..."]}
-            road_map={
-              [ "1. Design & Develope pages - continuously developing on the webpage, and finish the design.",
-                "2. Fetch users from AWS - Create a way for user to fetch user list from AWS S3.",
-                "3. Add animation - Add animation to increase interested for user on using user management.",
-                "4. Allow setting for mass user usage - Create a way for any user to fetch information from their database through URL. (May not work since every JSON/file type would look different)",
-              ]}
-            last_update={"26th June 2022"}
-            button_link={"https://lok020.github.io/user_management/"}/>
-          <ProjectBlock
             title={"Weather"}
             snapshot={project_2_snapshot}
             description={"Weather made using HTML, CSS, javascript, React, OpenWeather API, and google material icons. Capable of displaying current weather, temperature, date, time, humidity, pressure, visibility, sunrise, sunset, cloudiness, wind, rain, and snow by the selected city."}
