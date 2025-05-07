@@ -32,7 +32,7 @@ class Home extends Component {
             <div className={"greeting-title"}>{"Good day, I'm"}</div>
             <div className={"title-1"}>{"Wai Lok Cheng"}</div>
             <div className={"title-2"}>{"Software Engineer"}</div>
-            <div className={"sub-title"}>{"Based in London, UK. 4+ years of experience in web development, specializing in front-end development."}</div>
+            <div className={"sub-title"}>{"Based in London, UK. 6+ years of software development experience in web."}</div>
           </Col>
           <Col xs="12" lg="5" className={"home-portrait"}>
             <img className={"portrait"} src={Portrait} alt="portrait" />

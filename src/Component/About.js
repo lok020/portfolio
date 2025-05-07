@@ -35,7 +35,7 @@ class About extends Component {
           <RowOfTitleAndInfo title={"Sex:"} info={"Male"}/>
           <RowOfTitleAndInfo title={"Languages:"} info={"English (Fluent), Cantonese (Native), Mandarin (Fluent)"}/>
           <RowOfTitleAndInfo title={"Current Location:"} info={"London, United Kingdom"}/>
-          <RowOfTitleAndInfo title={"Nationality:"} info={"British national (overseas) / BNO"}/>
+          <RowOfTitleAndInfo title={"Nationality:"} info={"Chinese (Hong Kong) & British national (overseas)"}/>
         </div>
 
         <div className={"title"}>{"Technical Background"}</div>
@@ -43,13 +43,13 @@ class About extends Component {
           <RowOfTitleAndInfo title={"Languages:"} info={"JavaScript, TypeScript, Python, C, C++, C#, SQL, Java"}/>
           <RowOfTitleAndInfo title={"Library:"} info={"React"}/>
           <RowOfTitleAndInfo title={"Framework:"} info={"Next.js"}/>
-          <RowOfTitleAndInfo title={"IDE:"} info={"Visual Studio Code, Eclipse"}/>
           <RowOfTitleAndInfo title={"Tools:"} info={"Git, Lighthouse, Tailwind CSS, Google Tag Manager, PhpMyAdmin, Npm, Node.js, Unity"}/>
-          <RowOfTitleAndInfo title={"Npm Packages:"} info={"graphql-tag, dotenv, sanitize-html, lodash, aws-sdk, react-router-dom, react-bootstrap, amchart, material-ui"}/>
         </div>
         
         <div className={"title"}>{"Experience"}</div>
         <div className={"information-area"}>
+          <RowOfTitleAndInfo title={"BT plc, United Kingdom:"}
+          info={"Software Engineering Professional"} sub_info={"September 2024 - Present"}/>
           <RowOfTitleAndInfo title={"Dorling Kindersley Limited, United Kingdom:"}
           info={"Software Engineer"} sub_info={"November 2022 - Decemeber 2023"}/>
           <RowOfTitleAndInfo title={"Zetakey Solutions Limited, Hong Kong:"}
