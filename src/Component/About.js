@@ -32,14 +32,14 @@ class About extends Component {
           <RowOfTitleAndInfo title={"First Name:"} info={"Wai Lok"}/>
           <RowOfTitleAndInfo title={"Last Name:"} info={"Cheng"}/>
           <RowOfTitleAndInfo title={"Sex:"} info={"Male"}/>
-          <RowOfTitleAndInfo title={"Languages:"} info={"English (Fluent), Cantonese (Native), Mandarin (Fluent)"}/>
+          <RowOfTitleAndInfo title={"Languages:"} info={"English, Cantonese, Mandarin"}/>
           <RowOfTitleAndInfo title={"Current Location:"} info={"London, United Kingdom"}/>
-          <RowOfTitleAndInfo title={"Nationality:"} info={"Chinese (Hong Kong) & British national (overseas)"}/>
+          <RowOfTitleAndInfo title={"Nationality:"} info={"Chinese (Hong Kong), British National (Overseas)"}/>
         </div>
 
         <div className={"title"}>{"Technical Background"}</div>
         <div className={"information-area"}>
-          <RowOfTitleAndInfo title={"Languages:"} info={"JavaScript, TypeScript, Python, C, C++, C#, SQL, Java"}/>
+          <RowOfTitleAndInfo title={"Languages:"} info={"JavaScript, TypeScript, C, C++, C#, SQL, Python"}/>
           <RowOfTitleAndInfo title={"Library:"} info={"React"}/>
           <RowOfTitleAndInfo title={"Framework:"} info={"Next.js"}/>
           <RowOfTitleAndInfo title={"Tools:"} info={"Git, Lighthouse, Tailwind CSS, Google Tag Manager, PhpMyAdmin, Npm, Node.js, Unity"}/>
@@ -47,14 +47,14 @@ class About extends Component {
         
         <div className={"title"}>{"Experience"}</div>
         <div className={"information-area"}>
-          <RowOfTitleAndInfo title={"BT plc, United Kingdom:"}
-          info={"Software Engineering Professional"} sub_info={"September 2024 - Present"}/>
+          <RowOfTitleAndInfo title={"BT Group, United Kingdom:"}
+          info={"Software Engineering Professional"} sub_info={"Sept. 2024 - Present"}/>
           <RowOfTitleAndInfo title={"Dorling Kindersley Limited, United Kingdom:"}
-          info={"Software Engineer"} sub_info={"November 2022 - Decemeber 2023"}/>
+          info={"Software Engineer"} sub_info={"Nov. 2022 - Dec. 2023"}/>
           <RowOfTitleAndInfo title={"Zetakey Solutions Limited, Hong Kong:"}
-          info={"Web Application Developer"} sub_info={"August 2018 - April 2022"}/>
+          info={"Web Application Developer"} sub_info={"Aug. 2018 - Apr. 2022"}/>
           <RowOfTitleAndInfo title={"Splendor Design & Construction Limited, Hong Kong:"}
-          info={"Web Developer"} sub_info={"June 2016 - August 2016"}/>
+          info={"Web Developer"} sub_info={"Jun. 2016 - Aug. 2016"}/>
         </div>
         
         <div className={"title"}>{"Educational"}</div>

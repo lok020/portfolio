@@ -13,6 +13,10 @@ class Home extends Component {
     this.state = {
       in_view: false,
     };
+    this.current_year = new Date().getFullYear();
+    this.past_work_experience = [4,1]
+    this.current_work_experience = this.current_year - 2024;
+    this.total_work_experience = this.past_work_experience.reduce((a, b) => a + b, 0) + this.current_work_experience;
   }
 
   componentDidMount = () => {
@@ -28,10 +32,10 @@ class Home extends Component {
       <div className={`home fade-in-section ${this.state.in_view ? 'in-window-view' : ''}`} ref={this.fade_in}>
         <Row>
           <Col xs="12" lg="7" className={"home-info"}>
-            <div className={"greeting-title"}>{"Good day, I'm"}</div>
+            <div className={"greeting-title"}>{"Hello, my name is"}</div>
             <div className={"title-1"}>{"Wai Lok Cheng"}</div>
             <div className={"title-2"}>{"Software Engineer"}</div>
-            <div className={"sub-title"}>{"Based in London, UK. 6+ years of software development experience in web."}</div>
+            <div className={"sub-title"}>{`Based in London, UK. ${this.total_work_experience}+ years of web development experience.`}</div>
           </Col>
           <Col xs="12" lg="5" className={"home-portrait"}>
             <img className={"portrait"} src={Portrait} alt="portrait" />
