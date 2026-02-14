@@ -1,0 +1,19 @@
+name: Automate CI/CD pipeline deploy build to gh-pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '18.x'
+    - name: Run predeploy
+      run: yarn predeploy
+    - name: Run deploy
+      run: yarn deploy
