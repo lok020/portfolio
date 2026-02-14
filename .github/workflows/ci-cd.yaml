@@ -34,7 +34,7 @@ jobs:
           git config user.email "wailokcheng020@gmail.com"
 
       - name: Deploy to GitHub Pages
-        url: "https://lok020.github.io/portfolio"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          url: "https://lok020.github.io/portfolio"
         run: npm run deploy
