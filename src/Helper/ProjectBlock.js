@@ -31,7 +31,7 @@ class ProjectBlock extends Component {
           <Modal.Body className='modal-body'>
             <Row>
               <Col xs="12" lg="5">
-                <img className={"modal-snapshot"} src={snapshot} />
+                <img className={"modal-snapshot"} alt={title} src={snapshot} />
               </Col>
               <Col xs="12" lg="7" className='modal-summary'>
                 <b>{description}</b>
@@ -59,7 +59,7 @@ class ProjectBlock extends Component {
         
         <div className={"summary"} onClick={this.handleModal}>
           <div className='summary-title'>{title}</div>
-          <img className={"summary-thumbnail"} src={snapshot} />
+          <img className={"summary-thumbnail"} alt={title} src={snapshot} />
         </div>
       </Col>
     );

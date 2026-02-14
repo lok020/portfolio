@@ -7,7 +7,6 @@ import ProjectBlock from '../Helper/ProjectBlock';
 // Image
 import project_1_snapshot from '../Image/project_1.png';
 import project_2_snapshot from '../Image/project_2.png';
-import project_3_snapshot from '../Image/project_3.png';
 import project_4_snapshot from '../Image/project_4.png';
 
 class Project extends Component {
