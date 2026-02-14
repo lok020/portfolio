@@ -33,6 +33,11 @@ jobs:
           git config user.name "lok020"
           git config user.email "wailokcheng020@gmail.com"
 
+      # ensure gh-pages can push using the action's token
+      - name: Authenticate git with token
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
       - name: Deploy to GitHub Pages
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
