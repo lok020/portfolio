@@ -3,7 +3,6 @@ import { Form, Button } from 'react-bootstrap';
 
 import '../CSS/Login.scss';
 
-
 class Login extends Component {
 
   constructor(props) {
