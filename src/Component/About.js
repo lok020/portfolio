@@ -1,5 +1,4 @@
 import React, { Component, createRef } from 'react';
-import { Button } from 'react-bootstrap';
 
 import TitleBar from '../Helper/TitleBar';
 import RowOfTitleAndInfo from '../Helper/RowOfTitleAndInfo';
