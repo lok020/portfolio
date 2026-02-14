@@ -10,8 +10,6 @@
   .header-row {
     height: inherit;
     width: inherit;
-    //filter: invert(1);
-    //mix-blend-mode: difference;
 
     .header-tab {
       height: 100%;
@@ -44,7 +42,6 @@
           }
 
           .moon-cover{
-            // display:inline-block;
             border-radius:50%;
             height: 45px;
             width: 45px;
@@ -135,7 +132,6 @@
       .header-tab-selection {
         cursor: pointer;
         transition: all .2s ease-in-out;
-        //float: right;
         height: inherit;
         width: 6em;
         font-size: 1.5em;
@@ -174,10 +170,5 @@
         }
       }
     }
-
-    // .header-date-time {
-    //   text-align: end;
-    //   padding-right: 2vw;
-    // }
   }
 }

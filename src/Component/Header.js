@@ -1,33 +1,16 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
-//import moment from 'moment';
 
-// CSS & SCSS
 import '../CSS/Header.scss';
 
 class Header extends Component {
-  //timeloop = null;
 
   constructor(props) {
     super(props);
     this.state = {
       is_dark_mode: true
-      //date_time: ""
     };
   }
-
-  // componentDidMount() {
-  //   this.timeloop = this.tick_tock();
-  // }
-
-  // componentWillUnmount() {
-  //   clearTimeout(this.timeloop);
-  // }
-
-  // tick_tock = () => {
-  //   this.setState({date_time: moment().format("YYYY-MM-DD HH:mm:ss")});
-  //   setTimeout( this.tick_tock, 100);
-  // }
 
   HeaderSelected = (e) => {
     const { changePage } = this.props;
@@ -94,7 +77,6 @@ class Header extends Component {
               {this.createHeaderSelection(header_selection_list, current_page)}
               <div className='color-mode-btn' onClick={this.handleColorModeBtn}><i className={"fa fa-adjust"}/></div>
           </Col>
-          {/* <Col xs="3" className={"header-date-time center-text-in-div"}>{this.state.date_time}</Col> */}
         </Row>
       </div>
     );
