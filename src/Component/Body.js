@@ -5,7 +5,6 @@ import About from './About';
 import Project from './Project';
 import Contact from './Contact';
 
-// CSS & SCSS
 import '../CSS/Body.scss';
 
 class Body extends Component {
