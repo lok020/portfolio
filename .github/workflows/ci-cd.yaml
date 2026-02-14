@@ -28,6 +28,11 @@ jobs:
       - name: Build (predeploy)
         run: npm run predeploy
 
+      - name: Configure Git
+        run: |
+          git config user.name "Wai Lok Cheng"
+          git config user.email "wailokcheng020@gmail.com"
+
       - name: Deploy to GitHub Pages
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
