@@ -42,13 +42,6 @@ class Contact extends Component {
             button_message={"Github - lok020"}
             button_link={"https://github.com/lok020"}
           />
-          {/* <ContentBlock
-            social_media={"whatsapp"}
-            icon={"fa fa-whatsapp"}
-            message={"Let's have a chat."}
-            button_message={"Whatsapp"}
-            button_link={"https://www.linkedin.com/in/lok020/"}
-          /> */}
           <ContentBlock
             social_media={"email"}
             icon={"fa fa-envelope"}

@@ -4,7 +4,6 @@ import { Row } from 'react-bootstrap';
 import TitleBar from '../Helper/TitleBar';
 import ProjectBlock from '../Helper/ProjectBlock';
 
-// Image
 import project_1_snapshot from '../Image/project_1.png';
 import project_2_snapshot from '../Image/project_2.png';
 import project_4_snapshot from '../Image/project_4.png';
@@ -89,12 +88,3 @@ class Project extends Component {
 }
 
 export default Project;
-
-
-/*
-There are several significant challenges for this project.\n1. The representation of multiplication, and division in the sense of how the general public portrays is different than the programming language. The calculator page is designed for use by everyone, therefore the representation for multiplication and division is displayed as the way we all learned in school. The way to solve this is when the equal button is being pressed, I will take the whole equation and transform all multiplication and division from the general representation into the programming representation by using the replace function.
-
-
-
-
-*/

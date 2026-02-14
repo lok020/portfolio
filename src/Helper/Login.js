@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { Form, Button } from 'react-bootstrap';
 
-// CSS & SCSS
 import '../CSS/Login.scss';
-
 
 class Login extends Component {
 
