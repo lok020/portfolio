@@ -41,15 +41,33 @@
     }
 
     .home-portrait {
-      padding: 0 2vw;
+      padding: 0 3vw;
         display: flex;
         justify-content: center;
         align-items: center;
 
       .portrait{
-        width: 100%;
+        width: 90%;
         height: 100%;
         border-radius: var(--border-radius);
+      }
+    }
+    
+    .resume-btn {
+      background: var(--about-content-title-color);
+      border: none;
+      width: 200px;
+      height: 50px;
+      border-radius: var(--border-radius);
+
+      .resume-btn-text{
+        color: var(--about-content-info-color);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
       }
     }
   }
@@ -76,24 +94,6 @@
 
       #sub-info {
         color: var(--about-content-info-color);
-      }
-    }
-
-    .resume-btn {
-      background: var(--about-content-title-color);
-      border: none;
-      width: 200px;
-      height: 50px;
-      border-radius: var(--border-radius);
-
-      .resume-btn-text{
-        color: var(--about-content-info-color);
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
       }
     }
   }
