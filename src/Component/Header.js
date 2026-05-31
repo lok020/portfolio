@@ -53,7 +53,9 @@ class Header extends Component {
   }
 
   render() {
-    const { current_page, header_selection_list } = this.props;
+    const { current_page, header_selection_list, scroll_progress = 0 } = this.props;
+    const moonCoverStyle = { transform: `translateX(calc(-${scroll_progress * 100}%))` };
+
     return (
       <div className={"header"}>
         <Row className={"header-row"}>
@@ -63,9 +65,7 @@ class Header extends Component {
                 <div className='dark-mode'>
                   <div className='cloud'/>
                   <div className='moon'>
-                    <div className='moon-cover'>
-
-                    </div>
+                    <div className='moon-cover' style={moonCoverStyle} />
                   </div>
                 </div>
                 :

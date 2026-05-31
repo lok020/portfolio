@@ -17,10 +17,16 @@ class Body extends Component {
   }
 
   handleScroll = (e) => {
-    const { changePage } = this.props;
-    if (e.target.scrollTop === 0)
+    const { changePage, onScrollProgress } = this.props;
+    const scrollTop = e.target.scrollTop;
+    const maxScroll = e.target.scrollHeight - e.target.clientHeight;
+    const progress = maxScroll > 0 ? Math.min(1, Math.max(0, scrollTop / maxScroll)) : 0;
+
+    if (onScrollProgress) onScrollProgress(progress);
+
+    if (scrollTop === 0)
       document.documentElement.style.setProperty('--header-background', "transparent");
-    else if (e.target.scrollTop !== 0)
+    else
       document.documentElement.style.setProperty('--header-background', "var(--current-color-mode-1)");
 
     if (e.target.innerText.includes("Contact")) changePage("contact", false);
