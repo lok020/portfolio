@@ -17,7 +17,8 @@ class Portfolio extends React.Component {
     super(props);
     this.state = {
       current_page: "home",
-      scroll_page: false
+      scroll_page: false,
+      scroll_progress: 0
     }
   }
   
@@ -31,13 +32,19 @@ class Portfolio extends React.Component {
     this.setState({scroll_page: false});
   }
 
+  handleScrollProgress = (progress) => {
+    this.setState({ scroll_progress: progress });
+  }
+
   render() {
     return (
       <div className={"portfolio"}>
         <Header current_page={this.state.current_page} changePage={this.changePage}
-                header_selection_list={this.header_selection_list}/>
+                header_selection_list={this.header_selection_list}
+                scroll_progress={this.state.scroll_progress}/>
         <Body current_page={this.state.current_page} changePage={this.changePage}
-              scroll_page={this.state.scroll_page} endScroll={this.endScroll}/>
+              scroll_page={this.state.scroll_page} endScroll={this.endScroll}
+              onScrollProgress={this.handleScrollProgress}/>
       </div>
     );
   }

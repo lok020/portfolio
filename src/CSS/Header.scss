@@ -29,6 +29,7 @@
           height: inherit;
           
           .moon{
+            position: relative;
             display:inline-block;
             border-radius:50%;
             height: 40px;
@@ -42,13 +43,15 @@
           }
 
           .moon-cover{
+            position: absolute;
+            top: 0;
+            left: 40px;
             border-radius:50%;
             height: 45px;
             width: 45px;
-            margin: -11px 11px;
             background: var(--header-background);
             mix-blend-mode: inherit;
-            transition: .3s;
+
           }
 
           .cloud {
