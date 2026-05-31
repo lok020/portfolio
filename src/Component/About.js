@@ -41,8 +41,8 @@ class About extends Component {
         <div className={"information-area"}>
           <RowOfTitleAndInfo title={"Languages:"} info={"JavaScript, TypeScript, C, C++, C#, SQL, Python"}/>
           <RowOfTitleAndInfo title={"Library:"} info={"React"}/>
-          <RowOfTitleAndInfo title={"Framework:"} info={"Next.js"}/>
-          <RowOfTitleAndInfo title={"Tools:"} info={"Git, Lighthouse, Tailwind CSS, Google Tag Manager, PhpMyAdmin, Npm, Node.js, Unity"}/>
+          <RowOfTitleAndInfo title={"Framework:"} info={"Next.js, React Native"}/>
+          <RowOfTitleAndInfo title={"Tools:"} info={"Git, MSAL, REST API, Adobe Experience Manager (AEM), Lighthouse, Tailwind CSS, Google Tag Manager (GTM), PhpMyAdmin, socket.io, Node.js, Unity"}/>
         </div>
         
         <div className={"title"}>{"Experience"}</div>
@@ -62,13 +62,7 @@ class About extends Component {
           <RowOfTitleAndInfo title={"University:"}
           info={"Washington State University, USA - Bachelor of Science in Computer Science"} sub_info={"December 2017"}/>
         </div>
-
-        <br/><br/>
-        <div className='resume-btn'>
-          <a href={require("../PDF/resume.pdf")} download="resume_wai_lok_cheng" className='resume-btn-text'>
-            {"Download Resume"}
-          </a>
-        </div>
+        <br/>
       </div>
     );
   }
