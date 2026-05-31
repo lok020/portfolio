@@ -36,6 +36,11 @@ class Home extends Component {
             <div className={"title-1"}>{"Wai Lok Cheng"}</div>
             <div className={"title-2"}>{"Software Engineer"}</div>
             <div className={"sub-title"}>{`Based in London, UK. ${this.total_work_experience}+ years of web development experience.`}</div>
+            <div className='resume-btn'>
+              <a href={require("../PDF/resume.pdf")} download="resume_wai_lok_cheng" className='resume-btn-text'>
+                {"Download Resume"}
+              </a>
+            </div>
           </Col>
           <Col xs="12" lg="5" className={"home-portrait"}>
             <img className={"portrait"} src={Portrait} alt="portrait" />
